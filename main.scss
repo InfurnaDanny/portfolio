@@ -201,6 +201,29 @@ section{
     margin-top: 0;
 }
 
+.allproject{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-height: none;
+
+    div{
+        display: flex;
+    }
+
+    .wrapper{
+        padding-top: 0;
+    }
+}
+
+.project{
+    img{
+        max-width: 500px;
+        padding: 0;
+    }
+}
+
 @keyframes left {
     to{
         transform: translate(-550px);
