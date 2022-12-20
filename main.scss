@@ -48,10 +48,15 @@ header{
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 2em;
+            gap: 1em;
+            font-size: 2em;
 
             li{
                 list-style: none;
+
+                a{
+                    color: white;
+                }
             }
         }
     }
@@ -62,7 +67,7 @@ header{
     max-width: 100%;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: -1;
     filter: opacity(10%);
 }
 
@@ -222,6 +227,19 @@ section{
         max-width: 500px;
         padding: 0;
     }
+}
+
+i{
+    width: 50px;
+}
+
+footer{
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    color: white;
 }
 
 @keyframes left {
