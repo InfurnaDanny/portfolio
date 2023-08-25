@@ -14,7 +14,14 @@ body {
 }
 
 .round {
-  background: linear-gradient(to right, white 4px, transparent 4px) 0 0, linear-gradient(to right, white 4px, transparent 4px) 0 100%, linear-gradient(to left, white 4px, transparent 4px) 100% 0, linear-gradient(to left, white 4px, transparent 4px) 100% 100%, linear-gradient(to bottom, white 4px, transparent 4px) 0 0, linear-gradient(to bottom, white 4px, transparent 4px) 100% 0, linear-gradient(to top, white 4px, transparent 4px) 0 100%, linear-gradient(to top, white 4px, transparent 4px) 100% 100%;
+  background: linear-gradient(to right, white 4px, transparent 4px) 0 0,
+    linear-gradient(to right, white 4px, transparent 4px) 0 100%,
+    linear-gradient(to left, white 4px, transparent 4px) 100% 0,
+    linear-gradient(to left, white 4px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, white 4px, transparent 4px) 0 0,
+    linear-gradient(to bottom, white 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, white 4px, transparent 4px) 0 100%,
+    linear-gradient(to top, white 4px, transparent 4px) 100% 100%;
   background-repeat: no-repeat;
   background-size: 60px 40px;
 }
@@ -143,7 +150,7 @@ section .elmet {
   font-size: 1em;
 }
 
-.door {
+.doors {
   margin-bottom: 0;
   display: flex;
   position: absolute;
@@ -157,11 +164,12 @@ section .elmet {
   top: 0;
   z-index: 3;
 }
-.door img {
+.doors img {
   min-width: 20%;
   padding: 0;
   margin: 0;
   box-shadow: 0 10px 40px black;
+  transition: linear 2s;
 }
 
 .door-section {
@@ -172,14 +180,6 @@ section .elmet {
   background: #670000;
   background: linear-gradient(135deg, #711717 20%, #181818 80%);
   cursor: pointer;
-}
-
-.left {
-  animation: left forwards 2s;
-}
-
-.right {
-  animation: right forwards 2s;
 }
 
 .reverse {
@@ -197,6 +197,7 @@ section .elmet {
 .allproject div {
   display: flex;
 }
+
 .allproject .wrapper {
   padding-top: 0;
 }
@@ -220,16 +221,6 @@ footer {
   color: white;
 }
 
-@keyframes left {
-  to {
-    transform: translate(-550px);
-  }
-}
-@keyframes right {
-  to {
-    transform: translate(550px);
-  }
-}
 @keyframes fadein {
   from {
     margin-top: 300px;
@@ -238,6 +229,7 @@ footer {
     margin-top: -70px;
   }
 }
+
 @keyframes fadeleft {
   from {
     margin-left: -1000px;
@@ -248,6 +240,7 @@ footer {
     opacity: 1;
   }
 }
+
 @media screen and (max-width: 850px) {
   header {
     padding: 30px;
