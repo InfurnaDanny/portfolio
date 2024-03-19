@@ -1,0 +1,68 @@
+.skills {
+	display: flex;
+	font-size: 1em;
+	animation: none;
+	content-visibility: auto;
+	cursor: auto;
+}
+
+.skills ul {
+	margin: 0 40px;
+	list-style-type: square;
+	font-size: 1em;
+}
+
+.doors {
+	margin-bottom: 0;
+	display: flex;
+	position: absolute;
+	align-self: flex-end;
+	justify-content: center;
+	min-width: 100%;
+	min-height: 500px;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	z-index: 3;
+	transform: translateX(0px);
+}
+
+.doors img {
+	min-width: 20%;
+	padding: 0;
+	margin: 0;
+	box-shadow: 0 10px 40px black;
+	transition: 2s;
+}
+
+.door_section {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	min-height: 500px;
+	background: rgb(103, 0, 0);
+	background: linear-gradient(135deg, rgba(113, 23, 23, 1) 20%, rgb(24, 24, 24) 80%);
+	cursor: pointer;
+	overflow: hidden;
+}
+
+@keyframes fadein {
+	from {
+		margin-top: 300px;
+	}
+	to {
+		margin-top: -70px;
+	}
+}
+
+@keyframes fadeleft {
+	from {
+		margin-left: -1000px;
+		opacity: 0;
+	}
+	to {
+		margin-left: 0px;
+		opacity: 1;
+	}
+}

@@ -1,0 +1,93 @@
+.allproject {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	max-height: none;
+	overflow: hidden;
+}
+
+.allproject div {
+	display: flex;
+}
+
+.allproject .wrapper {
+	padding-top: 0;
+}
+
+.projects{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	max-width: 1280px;
+}
+
+.project {
+	padding: 0;
+	margin: 0;
+}
+
+.project:hover{
+	transform: scale(1.05);
+	transition: .3s;
+}
+
+.project img {
+	max-width: 500px;
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	animation: none;
+	padding: 0;
+	padding-top: 5%;
+}
+
+.wrapper h2 {
+	width: 100%;
+	color: white;
+	font-size: 1.3em;
+	text-align: center;
+}
+
+.round {
+	background: linear-gradient(to right, white 4px, transparent 4px) 0 0,
+		linear-gradient(to right, white 4px, transparent 4px) 0 100%,
+		linear-gradient(to left, white 4px, transparent 4px) 100% 0,
+		linear-gradient(to left, white 4px, transparent 4px) 100% 100%,
+		linear-gradient(to bottom, white 4px, transparent 4px) 0 0,
+		linear-gradient(to bottom, white 4px, transparent 4px) 100% 0,
+		linear-gradient(to top, white 4px, transparent 4px) 0 100%,
+		linear-gradient(to top, white 4px, transparent 4px) 100% 100%;
+	background-repeat: no-repeat;
+	background-size: 60px 40px;
+	max-width: 1280px;
+}
+
+@media screen and (max-width: 850px) {
+	.section div {
+		font-size: 1.5em;
+	}
+
+	.section img {
+		margin-right: 20px;
+	}
+
+	.section .round {
+		margin: 20px;
+	}
+	.wrapper .round {
+		flex-direction: column;
+	}
+
+	.wrapper div {
+		padding: 20px;
+	}
+}
